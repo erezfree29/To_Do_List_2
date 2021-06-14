@@ -13,5 +13,4 @@ import Bbc from './bbc.png';
     myIcon.src = Bbc;
    return element;
  }
-
  document.body.appendChild(component());
