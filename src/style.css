@@ -6,9 +6,31 @@
   font-weight: 600;
   font-style: normal;
 }
+.content {
+  width: 50vw;
+  margin-left: 25vw;
+}
 
-.hello {
+.picture {
+  height: 65vh;
+  width: 50vw;
   color: blue;
-  background: url('./bbc.png');
   font-family: 'MyFont', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.picture img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  padding-left: 12.5vw;
+}
+
+p {
+  font-size: 30px;
+  margin-left: 3vw;
+}
+
+
+
