@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'MyFont';
+  src:
+    url('./Roboto-Medium.ttf') format('roberto'),
+    url('./Roboto-Regular.ttf') format('roberto-r');
+  font-weight: 600;
+  font-style: normal;
+}
+.content {
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+.picture {
+  margin-top: 10vh;
+  height: 65vh;
+  width: 50vw;
+  color: blue;
+  font-family: 'MyFont', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.picture img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  padding-left: 12.5vw;
+  position: fixed;
+  top: 0;
+}
+
+p {
+  font-size: 30px;
+  margin-left: 3vw;
+}
+
+nav {
+  position: fixed;
+  width: 50vw;
+  left: 25vw;
+  top: 0;
+}
+
