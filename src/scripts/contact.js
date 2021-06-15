@@ -1,9 +1,9 @@
-function menu () {
+function contact () {
   const nav = document.querySelector('nav');
   const home = document.createElement('button');
-  home.classList.add('menu');
-  home.textContent = 'menu';
+  home.classList.add('contact');
+  home.textContent = 'contact';
   nav.appendChild(home);
 }
 
-export default menu();
+export default contact();

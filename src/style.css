@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'MyFont';
   src:
-    url('./Roboto-Medium.ttf') format('roberto'),
-    url('./Roboto-Regular.ttf') format('roberto-r');
+    url('./fonts/Roboto-Medium.ttf') format('roberto'),
+    url('./fonts/Roboto-Regular.ttf') format('roberto-r');
   font-weight: 600;
   font-style: normal;
 }
@@ -36,10 +36,145 @@ p {
 }
 
 nav {
+  display: flex;
   position: fixed;
   width: 50vw;
+  height: 2vh;
+  top: 0.5vh;
   left: 25vw;
-  top: 0;
-  background-color: red;
+  right: 0;
+  align-items: center;
+}
+
+.contact,
+.menu {
+  margin-left: 30px;
+}
+
+.home {
+  margin-left: 22vw;
+}
+
+.container {
+  width: 50vw;
+  height: 60vh;
+  margin-left: 25vw;
+  margin-top: 6vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+}
+
+.us {
+  margin: 80px 0;
+  margin-right: 80px;
+  margin-left: 125px;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.us:before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.us:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+.usheader {
+  position: absolute;
+  left: 950px;
+  top: 165px;
+  color: white;
+}
+
+.contactp{
+  position: absolute;
+  top: 285px;
+  left: 850px;
+  width: 250px;
+  height: 90px;
+  background: red;
+  color: white;
+  font-size: 14px;
+}
+.row{
+  padding-top: 8px;
+  padding-left: 3px;
+}
+
+.second {
+  margin-top: 100px;
+  background-color: blue;
+}
+
+.third {
+  margin-top: 200px;
+  background-color: green;
+}
+
+button {
+  align-items: normal;
+  background-color: rgba(0,0,0,0);
+  border-color: rgb(0, 0, 238);
+  border-style: none;
+  box-sizing: content-box;
+  color: black; 
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  height: auto;
+  padding: 0;
+  perspective-origin: 0 0;
+  text-align: start;
+  text-decoration: underline;
+  transform-origin: 0 0;
+  width: auto;
+  -moz-appearance: none;
+  -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
+  -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
+  text-decoration: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+h2{
+  color: white;
+}
+
+.dish_one {
+  margin-top: -150px;
+  width: 350px;
+}
+
+.menu_container {
+  height: 80vh;
 }
 
