@@ -1,4 +1,4 @@
-function contact () {
+function contact() {
   const nav = document.querySelector('nav');
   const home = document.createElement('button');
   home.classList.add('contact');

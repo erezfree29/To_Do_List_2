@@ -1,4 +1,5 @@
 import Restaurant from '../images/Restaurant.jpg';
+
 function pictureDiv() {
   const content = document.querySelector('.content');
   const element = document.createElement('div');
@@ -10,4 +11,3 @@ function pictureDiv() {
 }
 
 export default pictureDiv();
-

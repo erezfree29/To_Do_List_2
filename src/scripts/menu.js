@@ -1,4 +1,4 @@
-function menu () {
+function menu() {
   const nav = document.querySelector('nav');
   const home = document.createElement('button');
   home.classList.add('menu');

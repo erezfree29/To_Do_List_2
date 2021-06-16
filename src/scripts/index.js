@@ -1,3 +1,5 @@
+/* eslint-disable func-names */
+/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import '../style.css';
 import navBar from './navbar';
@@ -8,30 +10,27 @@ import header from './header';
 import pictureDiv from './picture';
 import description from './description';
 
-
-
-
 const menuButton = document.querySelector('.menu');
 const homeButton = document.querySelector('.home');
 const contactButton = document.querySelector('.contact');
-const content = document.querySelector('.content')
+const content = document.querySelector('.content');
 
 homeButton.onclick = function () {
   const contactContent = document.querySelector('.contact_content');
   const menuContent = document.querySelector('.menu_content');
-  if (contactContent !== null){
+  if (contactContent !== null) {
     contactContent.parentNode.removeChild(contactContent);
     document.body.appendChild(content);
   }
-  if (menuContent !== null){
+  if (menuContent !== null) {
     menuContent.parentNode.removeChild(menuContent);
     document.body.appendChild(content);
   }
 };
 
 contactButton.onclick = function () {
-  const content = document.querySelector('.content')
-  const menuContent = document.querySelector('.menu_content')
+  const content = document.querySelector('.content');
+  const menuContent = document.querySelector('.menu_content');
   if (content !== null) {
     content.parentNode.removeChild(content);
   }
@@ -45,7 +44,7 @@ contactButton.onclick = function () {
   contactcontent.appendChild(container);
   const usheader = document.createElement('div');
   usheader.classList.add('usheader');
-  usheader.textContent = "contact us";
+  usheader.textContent = 'contact us';
   container.innerHTML = `
   <div class="us"></div>
   <div class="contactp">
@@ -64,14 +63,13 @@ contactButton.onclick = function () {
   <div class="row">Email: stuckinthe90's@unavilable.com</div>
 </div>
   `;
-  container.appendChild(usheader)
+  container.appendChild(usheader);
   document.body.appendChild(contactcontent);
 };
 
-
 menuButton.onclick = function () {
-  const content = document.querySelector('.content')
-  const contactContent = document.querySelector('.contact_content')
+  const content = document.querySelector('.content');
+  const contactContent = document.querySelector('.contact_content');
   if (content !== null) {
     content.parentNode.removeChild(content);
   }
@@ -96,14 +94,3 @@ menuButton.onclick = function () {
   `;
   document.body.appendChild(menuContent);
 };
-
-
-
-
-
-
-
-
-
-
-

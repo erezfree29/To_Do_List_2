@@ -1,4 +1,4 @@
-function home () {
+function home() {
   const nav = document.querySelector('nav');
   const home = document.createElement('button');
   home.classList.add('home');
@@ -7,12 +7,3 @@ function home () {
 }
 
 export default home();
-
-
-
-
-
-
-
-
-
