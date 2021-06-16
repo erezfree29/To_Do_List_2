@@ -18,7 +18,7 @@ the content in the webpage is produced almost purely by Javascript usage on a si
 
 ### Installation
 
-In order to run the project on your local machine, please run the following commands on your terminal:
+To run the project on your local machine, please run the following commands on your terminal:
 
 > 1. run `git clone https://github.com/erezfree29/Restaurant/`
 > 2. run `cd Restaurant`
