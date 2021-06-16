@@ -6,6 +6,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
 .content {
   width: 50vw;
   margin-left: 25vw;
@@ -72,14 +73,15 @@ nav {
   position: relative;
   display: block;
   color: red;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-right: 100px solid transparent;
   border-bottom: 70px solid red;
   border-left: 100px solid transparent;
   transform: rotate(35deg);
 }
-.us:before {
+
+.us::before {
   border-bottom: 80px solid red;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
@@ -92,14 +94,15 @@ nav {
   content: '';
   transform: rotate(-35deg);
 }
-.us:after {
+
+.us::after {
   position: absolute;
   display: block;
   color: red;
   top: 3px;
   left: -105px;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-right: 100px solid transparent;
   border-bottom: 70px solid red;
   border-left: 100px solid transparent;
@@ -114,7 +117,7 @@ nav {
   color: white;
 }
 
-.contactp{
+.contactp {
   position: absolute;
   top: 285px;
   left: 850px;
@@ -124,7 +127,8 @@ nav {
   color: white;
   font-size: 14px;
 }
-.row{
+
+.row {
   padding-top: 8px;
   padding-left: 3px;
 }
@@ -141,11 +145,11 @@ nav {
 
 button {
   align-items: normal;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgb(0, 0, 238);
   border-style: none;
   box-sizing: content-box;
-  color: black; 
+  color: black;
   cursor: pointer;
   display: inline;
   font: inherit;
@@ -157,24 +161,46 @@ button {
   transform-origin: 0 0;
   width: auto;
   -moz-appearance: none;
-  -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
-  -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
-  text-decoration: none;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
 
-h2{
+h2 {
   color: white;
-}
-
-.dish_one {
-  margin-top: -150px;
-  width: 350px;
 }
 
 .menu_container {
   height: 80vh;
+  display: block;
 }
 
+.dish {
+  margin-top: 20px;
+}
+
+.our_menu_header {
+  display: flex;
+  justify-content: center;
+}
+
+.new_menu {
+  display: flex;
+  width: 30vw;
+  margin-left: 12.5vw;
+}
+
+.starters {
+  margin-left: 20px;
+  margin-right: 150px;
+}
+
+.desert,
+.deserts {
+  margin-top: 4vh;
+  margin-left: 20vw;
+}
+
+.desert {
+  margin-bottom: -2vh;
+}
