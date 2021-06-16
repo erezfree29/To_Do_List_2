@@ -1,24 +1,24 @@
 # Restaurant
 
-Restaurant odin project
+Restaurant Odin project
 
-#### The app demonstrates the use of NPM,Webpack and Javascript.
+#### The app demonstrates the use of NPM, Webpack, and Javascript.
 
 the content in the webpage is produced almost purely by Javascript usage on a single HTML file.
 
 ## Built with
 
--   Java scrtipts ES6
--   NPM
--   WEBPACK
--   HTML
--   CSS
--   VScode
--   Lots of love :heart:
+-   Java scrtipts ES6
+-   NPM
+-   WEBPACK
+-   HTML
+-   CSS
+-   VScode
+-   Lots of love :heart:
 
 ### Installation
 
-In order to run the the project on your local machine, please run the following commands on your terminal:
+In order to run the project on your local machine, please run the following commands on your terminal:
 
 > 1. run `git clone https://github.com/erezfree29/Restaurant/`
 > 2. run `cd Restaurant`
