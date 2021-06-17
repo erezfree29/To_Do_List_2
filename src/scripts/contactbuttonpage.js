@@ -1,4 +1,4 @@
-function contactbuttonpage() {
+const contactbuttonpage = (() => {
   const contactButton = document.querySelector('.contact');
   contactButton.addEventListener('click', () => {
     const content = document.querySelector('.content');
@@ -41,6 +41,6 @@ function contactbuttonpage() {
       document.body.appendChild(contactcontent);
     }
   });
-}
+})();
 
-export default contactbuttonpage();
+export default contactbuttonpage;

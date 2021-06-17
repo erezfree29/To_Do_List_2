@@ -1,4 +1,4 @@
-function description() {
+const description = (() => {
   const content = document.querySelector('.content');
   const description = document.createElement('p');
   description.innerHTML += 'Let’s Shake It Up At Bill’s....<br />';
@@ -12,6 +12,6 @@ function description() {
   description.innerHTML += 'Liqueur with Fever-Tree White Grape & Apricot Soda £7.50 now...<br />';
   description.innerHTML += '£3.75....<br />';
   content.appendChild(description);
-}
+})();
 
-export default description();
+export default description;

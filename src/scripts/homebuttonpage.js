@@ -1,4 +1,4 @@
-function homebuttonpage() {
+const homebuttonpage = (() => {
   const content = document.querySelector('.content');
   const homeButton = document.querySelector('.home');
   homeButton.addEventListener('click', () => {
@@ -13,5 +13,5 @@ function homebuttonpage() {
       document.body.appendChild(content);
     }
   });
-}
-export default homebuttonpage();
+})();
+export default homebuttonpage;

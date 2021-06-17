@@ -1,4 +1,4 @@
-function menuButtonPage() {
+const menuButtonPage = () => {
   const menuButton = document.querySelector('.menu');
   menuButton.addEventListener('click', () => {
     const content = document.querySelector('.content');
@@ -88,6 +88,6 @@ function menuButtonPage() {
       document.body.appendChild(menuContent);
     }
   });
-}
+};
 
 export default menuButtonPage();
