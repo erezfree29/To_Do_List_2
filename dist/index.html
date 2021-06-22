@@ -6,8 +6,31 @@
   </head>
   <body>
     <div class="content">
+      <div class="side_bar">
+        <div class="projects">
+          <div class="button_contain">
+            <div class="button">> Projects</div>
+            <div class="add">+</div>
+          </div>
+          <ul class="projects_list">
+            <li>1</li>
+            <li>2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-popup" id='myForm'>
+        <form  class="form-container" onsubmit="return false;">
       
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter name" name="name" id="myInput">
+      
+          <button type="submit" class="btn add_button">Add</button>
+          <button type="submit" class="btn cancel">Close</button>
+        </form>
+      </div>
     </div>
    <script src="bundle.js"></script>
   </body>
 </html>
+<script>
+</script>
