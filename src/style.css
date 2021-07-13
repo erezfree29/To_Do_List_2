@@ -29,6 +29,7 @@ input[type="text"] { border: none; }
   border-bottom: 1px solid #dcdcdc;
   border-left: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
+  margin-top: 3%;
 }
 
 .clear {
@@ -56,4 +57,7 @@ ul li {
 
 .today {
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
