@@ -1,6 +1,6 @@
 function newProjectFunction(name) {
   const project = {
-    name: name,
+    name,
     todos: [],
   };
   return project;

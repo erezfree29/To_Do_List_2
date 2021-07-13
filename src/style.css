@@ -1,3 +1,26 @@
 body {
-
+  background-color: rgb(246,246,246);
 }
+
+.lists_container {
+  background-color: rgb(255,255,255);
+  width: 90%;
+  margin-left: 3%;
+}
+
+ul {
+  border-bottom: 1px solid #DCDCDC;
+}
+
+#checkboxes label {
+  float: left;
+}
+ ul {
+  list-style: none;
+}
+
+.add {
+  border-bottom: 1px solid #DCDCDC;
+  padding-left: 2%;
+}
+
