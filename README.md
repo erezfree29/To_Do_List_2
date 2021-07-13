@@ -1,10 +1,11 @@
-# Restaurant
+# To do list
 
-Restaurant Odin project
+To do list Odin project
 
 #### The app demonstrates the use of NPM, Webpack, and Javascript.
 
 the content in the webpage is produced almost purely by Javascript usage on a single HTML file.
+The app allows toy to create a to do list,edit and remove tasks and mark them as complete.
 
 ## Built with
 
@@ -20,8 +21,8 @@ the content in the webpage is produced almost purely by Javascript usage on a si
 
 To run the project on your local machine, please run the following commands on your terminal:
 
-> 1. run `git clone https://github.com/erezfree29/Restaurant/`
-> 2. run `cd Restaurant`
+> 1. run `git clone https://github.com/erezfree29/To_Do_List_2/`
+> 2. run `cd To_Do_List_2`
 > 3. Open the index.html file with your browser
 
 ## Author
@@ -37,7 +38,7 @@ To run the project on your local machine, please run the following commands on y
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues](https://github.com/erezfree29/Restaurant/issues)
+Feel free to check the [issues](https://github.com/erezfree29/To_Do_List_2/issues)
 
 ## Show your support
 
