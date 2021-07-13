@@ -4,8 +4,7 @@ body {
 
 .lists_container {
   background-color: rgb(255,255,255);
-  width: 90%;
-  margin-left: 3%;
+  height: 80%;
 }
 
 ul {
@@ -23,4 +22,41 @@ ul {
   border-bottom: 1px solid #DCDCDC;
   padding-left: 2%;
 }
+input[type="text"] { border: none }
 
+.container {
+  width: 90%;
+  margin-left: 3%;
+  background-color: rgb(246,246,246);
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li:after {
+  content: '\2807';
+  font-size: 20px;
+  float: right;
+  padding-right: 2%;
+  margin-bottom: 10px;
+  }
+
+  ul li {
+    height: 30px;
+  }
+
+  .fa-sync-alt {
+    float: right;
+    padding-right: 2%;
+  }
+
+  .today {
+    height: 30px;
+  }

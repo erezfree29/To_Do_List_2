@@ -2,16 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
    <title></title>
   </head>
   <body>
     <div class="content">
-      <div class="to_do_list">
+      <div class="container">
         <div class="lists_container">
-          <ul>Today's to do</ul>
-          <div class="add">Add to your list</div>
-      </div>
-      </div>
+          <ul class="today">Today's to do<i class="fas fa-sync-alt"></i></ul>
+          <form class="add">
+            <input type="text" placeholder="Add to your list">
+          </form>
+        </div>
+        <div class="clear">clear completed</div>
+        </div>
     </div>
    <script src="bundle.js"></script>
   </body>
