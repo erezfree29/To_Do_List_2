@@ -1,4 +1,5 @@
 import '../style.css';
+
 const taskOne = {
   description: 'Clean car',
   completed: true,
@@ -30,4 +31,3 @@ tasksArray.forEach((task) => {
   list.appendChild(liDescription);
   toDoList.appendChild(list);
 });
-
