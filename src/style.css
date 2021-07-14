@@ -41,9 +41,8 @@ input[type="text"] { border: none; }
 ul li::after {
   content: '\2807';
   font-size: 20px;
-  float: right;
-  padding-right: 2%;
   margin-bottom: 10px;
+  float: right;
 }
 
 ul li {
@@ -78,9 +77,6 @@ ul li {
 
 .column {
   cursor: move;
-}
-.column header {
-  
 }
 
 .column.dragElem {
