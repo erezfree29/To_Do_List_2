@@ -25,7 +25,7 @@ const completed = (() => {
     liDescription.classList.add('column');
     liDescription.setAttribute('draggable', true);
     liDescription.innerHTML = '<input type="checkbox">';
-    liDescription.firstChild.id = task.index;
+    liDescription.firstChild.id = task.description;
     liDescription.addEventListener('change', () => {
       if (task.completed === false) {
         task.completed = true;
