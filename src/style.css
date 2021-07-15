@@ -38,13 +38,6 @@ input[type="text"] { border: none; }
   align-items: center;
 }
 
-ul li::after {
-  content: '\2807';
-  font-size: 20px;
-  margin-bottom: 10px;
-  float: right;
-}
-
 ul li {
   height: 30px;
 }
@@ -86,3 +79,14 @@ ul li {
   border: 2px dashed #000;
   border-top: 2px solid blue;
 }
+
+.add_button {
+  float: right;
+  margin-right: 1.5%;
+}
+
+.fa-ellipsis-v {
+  float: right;
+  margin-right: 2%;
+}
+
