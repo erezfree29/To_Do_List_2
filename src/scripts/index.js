@@ -1,6 +1,6 @@
 import '../style.css';
 import sort from './sorting';
-import completed from './completed';
+import completed from './tasks';
 var dragSrcEl = null;
 function handleDragStart(e) {
   // Target (this) element is the source node.
@@ -64,10 +64,14 @@ function handleDragEnd(e) {
     for (let j = 0; j < items.length; j += 1) {
       if (tasks[i].description === items[j].firstChild.id) {
         tasks[i].index = j;
+        const temp = tasks[j];
+        tasks[j] = tasks[i];
+        tasks[i] = temp;
+        tasks[i].index = i;
       }
     }
   }
-  alert(tasks[0].index);
+
   localStorage.setItem('tasksListArray', JSON.stringify(tasks));
 
   /*[].forEach.call(cols, function (col) {
@@ -86,7 +90,3 @@ function addDnDHandlers(elem) {
 
 var cols = document.querySelectorAll('#columns .column');
 [].forEach.call(cols, addDnDHandlers);
-
-
-
-
