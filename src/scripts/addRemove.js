@@ -11,7 +11,15 @@ const addRemove = (() => {
       completed: false,
       index: tasksArray.length,
     };
-    tasksArray.push(task);
+    let flag = 'down';
+    for (let i = 0; i < tasksArray.length; i += 1) {
+      if (task.description === tasksArray[i].description) {
+        flag = 'up';
+      }
+    }
+    if (flag === 'down') {
+      tasksArray.push(task);
+    }
     localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
   });
 })();
