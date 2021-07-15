@@ -4,3 +4,5 @@ import sort from './sorting';
 import addRemove from './addRemove';
 tasks();
 sort();
+addRemove();
+

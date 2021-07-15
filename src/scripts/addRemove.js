@@ -22,6 +22,13 @@ const addRemove = (() => {
     }
     localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
   });
+  const editLinks = document.querySelectorAll('.edit');
+  for (let i = 0; i < editLinks.length; i += 1) {
+
+    editLinks[i].addEventListener('click', () => {
+      alert(1);
+    });
+  }
 })();
 
 export default addRemove;
