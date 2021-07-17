@@ -43,6 +43,7 @@ ul li {
   padding-top: 15px;
 }
 
+.fa-trash,
 .fa-sync-alt {
   float: right;
   padding-right: 2%;
