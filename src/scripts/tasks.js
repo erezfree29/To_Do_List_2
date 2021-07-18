@@ -19,20 +19,40 @@ const completed = (() => {
         tasksArray[i].completed = false;
       }
       localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
+      const clear = document.querySelector('.clear');
+      clear.addEventListener('click', () => {
+        for (let i = 0; i < tasksArray.length; i += 1) {
+          if (tasksArray[i].completed === true) {
+            tasksArray.splice(i, 1);
+            i -= 1;
+          }
+        }
+        localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
+        location.reload();
+      });
     });
-
-    liDescription.innerHTML += tasksArray[i].description;
+    const descriptionDiv = document.createElement('div');
+    descriptionDiv.textContent = tasksArray[i].description;
+    liDescription.appendChild(descriptionDiv);
     list.appendChild(liDescription);
     toDoList.appendChild(list);
     const edits = document.querySelectorAll('.edit');
     const edit = edits[edits.length - 1];
     edit.addEventListener('click', () => {
-      list.children[i].contentEditable = true;
+      list.children[i].lastChild.contentEditable = true;
       edit.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
-      liDescription.addEventListener("keyup", function(event) {
+      edit.addEventListener('click', () => {
+        tasksArray.splice(i, 1);
+        localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
+        location.reload();
+      });
+
+
+      liDescription.lastChild.addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
           tasksArray[i].description = liDescription.textContent;
           localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
+          location.reload();
         }  
       });
     });
