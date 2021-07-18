@@ -1,4 +1,12 @@
 # To do list
+This app will allow the user to
+-create a list of taks.
+-reorder the list of tasks.
+-edit a task.
+-delete a task.
+-delete multiple tasks.
+
+tasks are to be save in the local storage of the browser.
 
 To do list Odin project
 
