@@ -2,7 +2,7 @@
 const sort = (() => {
   let dragSrcEl = null;
   function handleDragStart(e) {
-    // Target (this) element is the source node.
+  // Target (this) element is the source node.
     dragSrcEl = this;
 
     e.dataTransfer.effectAllowed = 'move';
