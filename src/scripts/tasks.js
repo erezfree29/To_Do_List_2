@@ -10,7 +10,7 @@ const completed = (() => {
     const liDescription = document.createElement('li');
     liDescription.classList.add('column');
     liDescription.setAttribute('draggable', true);
-    liDescription.innerHTML = '<input type="checkbox"><a href="#" class="edit"><i class="fas fa-ellipsis-v"></i></a>';
+    liDescription.innerHTML = '<input type="checkbox" class="task_name"><a href="#" class="edit"><i class="fas fa-ellipsis-v"></i></a>';
     liDescription.firstChild.id = tasksArray[i].description;
     liDescription.addEventListener('change', () => {
       if (tasksArray[i].completed === false) {

@@ -35,6 +35,8 @@ input[type="text"] { border: none; }
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 ul li {
@@ -65,8 +67,8 @@ ul li {
   -khtml-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+
   /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
   -webkit-user-drag: element;
 }
 
@@ -81,6 +83,7 @@ ul li {
 .column.dragElem {
   opacity: 0.4;
 }
+
 .column.over {
   border: 2px dashed #000;
   border-top: 2px solid blue;
@@ -104,7 +107,6 @@ form {
   display: flex;
 }
 
-.clear {
-  text-decoration: none;
-  color: black;
+.task_name {
+  max-width: 50%;
 }
