@@ -1,7 +1,7 @@
 const completed = (() => {
   let tasksArray = [];
   if (localStorage.getItem('tasksListArray') != null) {
-     tasksArray = JSON.parse(localStorage.getItem('tasksListArray'));
+    tasksArray = JSON.parse(localStorage.getItem('tasksListArray'));
   }
 
   for (let i = 0; i < tasksArray.length; i += 1) {
@@ -28,7 +28,7 @@ const completed = (() => {
           }
         }
         localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
-        location.reload();
+        window.location.reload();
       });
     });
     const descriptionDiv = document.createElement('div');
@@ -44,16 +44,15 @@ const completed = (() => {
       edit.addEventListener('click', () => {
         tasksArray.splice(i, 1);
         localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
-        location.reload();
+        window.location.reload();
       });
 
-
-      liDescription.lastChild.addEventListener("keyup", function(event) {
+      liDescription.lastChild.addEventListener('keyup', (event) => {
         if (event.keyCode === 13) {
           tasksArray[i].description = liDescription.textContent;
           localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
-          location.reload();
-        }  
+          window.location.reload();
+        }
       });
     });
   }

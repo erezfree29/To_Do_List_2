@@ -1,6 +1,4 @@
-import completed from "./tasks";
-
-const addRemove = (() => {  
+const addRemove = (() => {
   const addButton = document.querySelector('.add_button');
   addButton.addEventListener('click', () => {
     let tasksArray = [];
@@ -31,8 +29,6 @@ const addRemove = (() => {
     liDescription.innerHTML = '<input type="checkbox"><a href="#" class="edit"><i class="fas fa-ellipsis-v"></i></a>';
     liDescription.firstChild.id = task.description;
 
-
-    
     liDescription.addEventListener('change', () => {
       if (task.completed === false) {
         task.completed = true;
@@ -50,25 +46,23 @@ const addRemove = (() => {
     const edits = document.querySelectorAll('.edit');
     const edit = edits[edits.length - 1];
     edit.addEventListener('click', () => {
-        list.children[list.children.length - 1].lastChild.contentEditable = true;
-        edit.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
-        edit.addEventListener('click', () => {
-          tasksArray.splice(tasksArray.length - 1, 1);
+      list.children[list.children.length - 1].lastChild.contentEditable = true;
+      edit.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
+      edit.addEventListener('click', () => {
+        tasksArray.splice(tasksArray.length - 1, 1);
+        localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
+        window.location.reload();
+      });
+      liDescription.lastChild.addEventListener('keyup', (event) => {
+        if (event.keyCode === 13) {
+          tasksArray[tasksArray.length - 1].description = liDescription.lastChild.textContent;
           localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
-          location.reload();
-        });
-        liDescription.lastChild.addEventListener('keyup', function(event) {
-          if (event.keyCode === 13) {
-            tasksArray[tasksArray.length -1].description = liDescription.lastChild.textContent;
-            localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
-            location.reload();
-          }
-        });
+          window.location.reload();
+        }
+      });
     });
     localStorage.setItem('tasksListArray', JSON.stringify(tasksArray));
   });
 })();
 
 export default addRemove;
-
-
