@@ -1,68 +1,112 @@
-.button {
-  font-weight: bold;
+body {
+  background-color: rgb(246, 246, 246);
 }
 
-.projects {
-  background-color: rgb(250,250,250);
-  width: 8vw;
-  margin-top: -5px;
+.lists_container {
+  background-color: rgb(255, 255, 255);
+  height: 80%;
+}
+
+ul {
+  list-style: none;
+}
+
+#checkboxes label {
+  float: left;
 }
 
 .add {
-  margin-left: 3vw;
+  border-bottom: 1px solid #dcdcdc;
+  padding-left: 2%;
+}
+input[type="text"] { border: none; }
+
+.container {
+  width: 90%;
+  margin-left: 3%;
+  background-color: rgb(246, 246, 246);
+  border-bottom: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  margin-top: 3%;
 }
 
-.button_contain {
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  height: 40px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 15px;
+  display: flex;
+  position: relative;
+}
+
+.fa-trash,
+.fa-sync-alt {
+  position: absolute;
+  right: 2%;
+}
+
+.today {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  margin-left: 2%;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* Required to make elements draggable in old WebKit */
+  -webkit-user-drag: element;
+}
+
+#columns {
+  list-style-type: none;
+}
+
+.column {
+  cursor: move;
+}
+
+.column.dragElem {
+  opacity: 0.4;
+}
+
+.column.over {
+  border: 2px dashed #000;
+  border-top: 2px solid blue;
+}
+
+.add_button {
+  margin-right: 1.5%;
+}
+
+.fa-ellipsis-v {
+  position: absolute;
+  right: 2%;
+}
+
+.add_to_tasks {
+  width: 100%;
+  height: 40px;
+}
+
+form {
   display: flex;
 }
 
-* {
-  box-sizing: border-box;
+.task_name {
+  max-width: 50%;
 }
-
-.form-popup {
-  position: fixed;
-  left: 40vw;
-  top: 10vw;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-  display: none;
-}
-
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
-
-.form-container input[type=text] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type=text]:focus{
-  background-color: #ddd;
-  outline: none;
-}
-
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-  width: 48%;
-}
-
-.add {
-  opacity: 1;
-}
-
-
-

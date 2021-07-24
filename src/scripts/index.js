@@ -1,3 +1,8 @@
 import '../style.css';
-import sideBar from './side_bar';
-sideBar();
+import tasks from './tasks';
+import sort from './sorting';
+import addRemove from './addRemove';
+
+tasks();
+sort();
+addRemove();
